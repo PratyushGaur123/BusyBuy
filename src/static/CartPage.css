@@ -1,0 +1,121 @@
+.product-grid{
+    grid-gap: 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    margin: 3rem 15rem;
+}
+
+.product-container{
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 0 rgba(64,77,148,.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    transition: all .25s ease-in-out;
+}
+
+.image-container{
+    flex: 1 1;
+}
+
+.details-container{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.image{
+    object-fit: contain;
+}
+
+.product-name{
+    color: #224957;
+    font-family: Inter,sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+.product-options{
+    align-items: center;
+    display: flex;
+    font-size: 24px;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 100%;
+}
+
+.remove-btn{
+    background: #f14444;
+    border: 1px solid red;
+    border-radius: 6px;
+    color: white;
+    padding: 12px;
+    font-size: 17px;
+    transition: 0.5s all;
+}
+
+.remove-btn:hover {
+    background: white;
+    color: red;
+}
+
+
+.product-price{
+    color: #224957;
+    font-weight: 700;
+    margin: 0;
+}
+
+.quantity-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.minus-plus:hover{
+    scale: 1.1;
+}
+
+.aside-price{
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    left: 0.5rem;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    position: fixed;
+    top: 30%;
+}
+
+.purchase-btn{
+    background: #7064e5;
+    border: 1px solid #7064e5;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    margin: auto;
+    transition: all .3s ease-in-out;
+    padding: 7px;
+    text-decoration: none;
+}
+.purchase-btn:hover{
+    background: white;
+    color: #7064e5;
+}
+
+.purchase-p{
+    color: #224957;
+    font-size: 1.15em;
+    font-weight: 700;
+}
